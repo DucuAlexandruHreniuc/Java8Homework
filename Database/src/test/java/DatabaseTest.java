@@ -28,7 +28,7 @@ public class DatabaseTest {
     }
 
     @Test
-    public void test_inset()throws SQLException {
+    public void test_insert()throws SQLException {
         Connection connection = DriverManager.getConnection("jdbc:h2:mem:test_mem");
         PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO accomodation VALUES(?, ?, ?, ?, ?)");
         preparedStatement.setString(1, "1");
